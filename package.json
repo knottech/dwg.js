@@ -1,0 +1,27 @@
+{
+    "name": "dwg",
+    "version": "1.0.0",
+    "description": "A CAD like tool based on two.js.",
+    "main": "src/dwg.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/knottech/dwg.js.git"
+
+    },
+    "author": "IAN",
+    "license": "ISC",
+    "devDependencies": {
+        "grunt": "~0.4.0",
+        "grunt-contrib-uglify": "*"
+    },
+    "dependencies": {
+        "jquery": ">=1.9.1"
+    },
+    "bugs": {
+        "url": "https://github.com/knottech/dwg.js/issues"
+    },
+    "homepage": "https://github.com/knottech/dwg.js#readme"
+}

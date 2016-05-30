@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>dwg.js demo</title>
+  <link rel="stylesheet" href="../third-party/bootstrap.css">
+  <script src="../third-party/jquery.min.js"></script>
+  <!-- <script src="/static/js/jquery.mousewheel.min.js"></script> -->
+  <script src="../third-party/two.min.js"></script>
+  <script src="../src/dwg.js"></script>
+  <script>
+    $().ready(function() {
+      wrapper = $("#svgWrapper");
+      wrapper.dwg();
+      $("#btnPoint").click(function() {
+        wrapper.dwg('point');
+      });
+      $("#btnLine").click(function() {
+        wrapper.dwg("line")
+      });
+      $("#btnRect").click(function() {
+        wrapper.dwg("rect")
+      });
+      $("#btnCircle").click(function() {
+        wrapper.dwg("circle")
+      });
+      $("#btnEllipse").click(function() {
+        wrapper.dwg("ellipse")
+      });
+      $("#btnStar").click(function() {
+        wrapper.dwg("star")
+      });
+      $("#btnPolygon").click(function() {
+        wrapper.dwg("polygon")
+      });
+      $("#btnCurve").click(function() {
+        wrapper.dwg("curve")
+      });
+      $("#btnClosedCurve").click(function() {
+        wrapper.dwg("closedcurve")
+      });
+      $("#btnClear").click(function() {
+        wrapper.dwg("clear")
+      });
+      $("#btnExit").click(function() {
+        wrapper.dwg("exit")
+      });
+      $(".btn").click(function(){
+          $(".btn").attr("class","btn btn-default");
+          $(this).attr("class","btn btn-success")
+      })
+    })
+  </script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <a href="https://github.com/knottech/dwg.js"><h1>dwg.js <small> Is it possible to put CAD on web?</small></h1></a>
+        </div>
+        <div class="col-md-10 col-md-offset-1">
+            <a id="btnPoint" class="btn btn-default">Point</a>
+            <a id="btnLine" class="btn btn-default">Line</a>
+            <a id="btnRect" class="btn btn-default">Rectangle</a>
+            <a id="btnCircle" class="btn btn-default">Circle</a>
+            <a id="btnEllipse" class="btn btn-default">Ellipse</a>
+            <a id="btnStar" class="btn btn-default">Star</a>
+            <a id="btnPolygon" class="btn btn-default">Polygon</a>
+            <a id="btnCurve" class="btn btn-default">Curve</a>
+            <a id="btnClosedCurve" class="btn btn-default">Round</a>
+            <a id="btnClear" class="btn btn-default">Clear</a>
+            <a id="btnExit" class="btn btn-default">Exit</a>
+            <!-- <a id="btnZoom" class="btn btn-default">Zoom</a> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div id="svgWrapper" class="well" style="width:100%;height:100%;background-color:#EEE"></div>
+        </div>
+    </div>
+    <div class="col-md-10 col-md-offset-1">
+        Thanks to <a href="https://github.com/knottech/dwg.js">two.js</a>
+    </div>
+
+</body>
+
+</html>
