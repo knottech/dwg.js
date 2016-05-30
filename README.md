@@ -1,6 +1,7 @@
 # dwg.js
 
 A CAD like tool based on [two.js](https://github.com/jonobr1/two.js).
+Visit [www.iknot.org/dwgjs](www.iknot.org/dwgjs) to see the examples.
 
 # Usage
 
@@ -23,7 +24,7 @@ A CAD like tool based on [two.js](https://github.com/jonobr1/two.js).
     </head>
     <body>
         <a id="btnLine" class="btn btn-default">Line</a>
-        <div id="svgWrapper" class="well" style="width:100%;height:100%;background-color:#EEE"></div>
+        <div id="svgWrapper"></div>
     </body>
     </html>
 
